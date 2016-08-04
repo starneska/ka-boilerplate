@@ -6,7 +6,7 @@
     Explanation here: http://blog.devaprise.com/2014/09/how-to-run-khan-academy-code-offline.html
   -->
   <title>JavaScript</title>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
 </head>
 <body>
   <canvas id="canvas"></canvas>
@@ -40,7 +40,13 @@
         }
 
         with (processing) {
+            ellipse(212, 206, 283, 318);
+
+            ellipse(212, 250, 100, 73);
             
+            ellipse(150, 150, 30, 30);
+            
+            ellipse(278, 150, 30, 30);
         }
         if (typeof draw !== 'undefined') processing.draw = draw;
     });
@@ -48,8 +54,10 @@
 </body>
 </html>
 
+<!--
 background(0);
 fill(255);
 textSize(20);
 textAlign(CENTER);
 text("Try putting this in the above code!",width/2,height/2);
+-->
