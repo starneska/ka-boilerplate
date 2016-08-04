@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  /**Thanks to Robert on Stack Overflow for figuring this out!*/
-  // Explanation here: http://blog.devaprise.com/2014/09/how-to-run-khan-academy-code-offline.html
+  <!--
+    Thanks to Robert on Stack Overflow for figuring this out!
+    Explanation here: http://blog.devaprise.com/2014/09/how-to-run-khan-academy-code-offline.html
+  -->
   <title>JavaScript</title>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
 </head>
@@ -38,17 +40,14 @@
         }
 
         with (processing) {
-            // INSERT YOUR KHAN ACADEMY PROGRAM HERE
+            background(0);
+            fill(255);
+            textSize(20);
+            textAlign(CENTER);
+            text("Try putting this in the above code!",width/2,height/2);
         }
         if (typeof draw !== 'undefined') processing.draw = draw;
     });
   </script>
 </body>
 </html>
-
-//I'll add more processing functions soon!
-background(0);
-fill(255);
-textSize(20);
-textAlign(CENTER);
-text("Try putting this in the above code!",width/2,height/2);
